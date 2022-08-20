@@ -1,6 +1,6 @@
 """Программа кто твой папа"""
 
-daddy = {'Sasha': 'Alyosha', 'Tolya': 'Anton', 'Artem': 'Artur'}
+daddy = {'Sasha': 'Tomy', 'Tolya': 'Anton', 'Artem': 'Artur'}
 choice = None
 while choice != "0":
     print("""
