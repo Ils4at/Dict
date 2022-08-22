@@ -66,11 +66,11 @@ def new_board():
 
 def display_board(board):
     """Отображаем игровую доску на экране."""
-    print("\n\t", board[0], "|", board[1], "|", board[2])
+    print("\t", board[0], "|", board[1], "|", board[2])
     print("\t", "---------")
-    print("\n\t", board[3], "|", board[4], "|", board[5])
+    print("\t", board[3], "|", board[4], "|", board[5])
     print("\t", "---------")
-    print("\n\t", board[6], "|", board[7], "|", board[8], "\n")
+    print("\t", board[6], "|", board[7], "|", board[8], "\n")
 
 
 def legal_moves(board):
@@ -110,7 +110,7 @@ def human_move(board):
         if move not in legal:
             print("\nСмешной человек! Это поле уже занято. Выбери другое.\n")
         print("Ладно...")
-        return move
+    return move
 
 
 def computer_move(board, computer, human):
@@ -171,7 +171,7 @@ def congrat_winner(the_winner, computer, human):
 
 def main():
     display_instruct()
-    computer, human = pieces()
+    human, computer = pieces()
     turn = X
     board = new_board()
     display_board(board)
